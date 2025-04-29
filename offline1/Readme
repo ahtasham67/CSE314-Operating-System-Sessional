@@ -1,0 +1,4 @@
+cd Workspace
+./organize.sh submissions targets tests answers -v
+
+Read specifications for more
