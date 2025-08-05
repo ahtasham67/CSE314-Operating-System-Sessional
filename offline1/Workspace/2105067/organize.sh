@@ -174,7 +174,7 @@ for file in "$submissions"/*.zip
             if [[ "$nofc" = false ]] ; then
                 functionNum=$(grep -cE "^\s*(public|private|protected)?\s*(static\s+)?(void|int|float|double|char|boolean|String)\s+[a-zA-Z_][a-zA-Z0-9_]*\s*\(" "$path/Main.$ext")
             fi   
-            if [[ "$noexecute" = false &&  ]] ; then
+            if [[ "$noexecute" = false ]] ; then
             echo "Executing files of $student_id"
             javac -d "$path" "$path/Main.$ext"
             for test_file in $tests/test*.txt; do
